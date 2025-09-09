@@ -1,0 +1,21 @@
+img{
+    width: 300px;
+}
+
+.container{
+    border: 1px solid;
+    margin: auto;
+    width: 25%;
+    background-color: coral;
+    text-align: center;
+}
+
+button{
+    color: black;
+    background:aliceblue;
+    padding: 5px;
+}
+
+.parent{
+    display: flex;
+}

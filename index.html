@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px solid black" >
+        <tr >
+            <td rowspan="3">name</td>
+            <td>roll</td>
+            <td>marks</td>
+        </tr>
+        <tr>
+            <td colspan="3">a</td>
+            <td>91</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>91</td>
+            <td>45</td>
+        </tr>
+    </table>
+   <h1>Welcome to DOM chapter</h1>
+   <p id="para">old paragraph</p>
+   <img id="myImg" src="nature bg.jpg" >
+   <button onclick="changeImage()">Change</button>
+
+   <div id="box" style="height: 100px;"></div>
+   <button onclick="changeColor()">Change color</button>
+
+   <div id="toggle">ASDFGHJKL</div>
+   <button onclick="toggleVisibility()">toggle</button>
+
+   <ul id="list">
+    <li>Item 1</li>
+   </ul>
+   <button onclick="addItem()">Add Item </button>
+   </ul>
+
+   <p id="removeMe">Delete this paragraph</p>
+   <button onclick="removeElement()">Delete</button>
+
+   <style>
+    
+   </style>
+    <script>
+        //changing the text of paragraph
+        document.getElementById("para").innerText="new paragraph";
+
+        //updating src attribute of an image when a button is clicked
+        function changeImage(){
+            document.getElementById("myImg").src="netflix.background.jpg";
+        }
+
+        //changing the background color of a div
+        function changeColor(){
+           document.getElementById("box").style.backgroundColor="lightblue";
+        }
+
+        //toggling visibility of a div
+        function toggleVisibility(){
+            const box=document.getElementById("toggle");
+            if(box.style.display === "none"){
+                box.style.display = "block";
+            } else {
+                box.style.display = "none";
+            }
+        }
+
+        //adding a new item to the list
+        function addItem(){
+            const li=document.createElement("li");
+            li.innerText="New Item";
+            document.getElementById("list").appendChild(li);
+        }
+
+        //removing a html element
+        function removeElement(){
+            const p=document.getElementById("removeMe");
+            p.remove();
+        }
+    </script>
+</body>
+</html>
