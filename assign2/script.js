@@ -19,7 +19,7 @@ function addTask(){
     listContainer.appendChild(li);
     inputBox.value="";
     saveData();
-}
+}g
 
 // Toggle checked class or delete task
 listContainer.addEventListener("click", function(e) {
