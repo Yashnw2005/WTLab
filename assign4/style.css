@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+a.button {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+a.small {
+    padding: 4px 7px;
+    background: #2196F3;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a.delete {
+    background: #e53935;
+    color: #fff;
+    padding: 4px 7px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.form-row {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 8px 12px;
+}
+
+.msg {
+    padding: 10px;
+    background: #f0f0f0;
+    border-left: 4px solid #4CAF50;
+    margin-bottom: 12px;
+}
+
+.error {
+    border-left-color: #e53935;
+    background: #fff0f0;
+}
